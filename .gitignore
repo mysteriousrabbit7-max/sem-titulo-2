@@ -1,0 +1,8 @@
+# Secrets
+.env
+*.env
+
+# Generated editor/runtime helpers
+.lune
+types/
+*.log
