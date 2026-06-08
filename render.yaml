@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: luau-discord-bot
+    runtime: docker
+    plan: starter
+    envVars:
+      - key: DISCORD_BOT_TOKEN
+        sync: false
+      - key: DISCORD_COMMAND_PREFIX
+        value: "!"
+      - key: DISCORD_INTENTS
+        value: "33281"

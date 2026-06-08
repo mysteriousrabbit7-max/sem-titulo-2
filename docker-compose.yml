@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    environment:
+      DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN}
+      DISCORD_COMMAND_PREFIX: ${DISCORD_COMMAND_PREFIX:-!}
+      DISCORD_INTENTS: ${DISCORD_INTENTS:-33281}
